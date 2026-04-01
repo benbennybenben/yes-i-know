@@ -1,18 +1,15 @@
 "use client";
 
-import Image from "next/image";
 import { motion } from "motion/react";
 
 export default function Home() {
   return (
     <main className="relative flex-1 flex items-center justify-center overflow-hidden">
-      <Image
-        src="/the-sleep-of-reason-produces-monsters.webp"
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img
+        src="/yes-i-know/the-sleep-of-reason-produces-monsters.webp"
         alt="The Sleep of Reason Produces Monsters by Francisco Goya"
-        width={600}
-        height={900}
         className="absolute inset-0 m-auto h-[calc(100%-4rem)] w-auto object-contain opacity-50 select-none pointer-events-none"
-        priority
       />
       <h1 className="relative z-10 text-[clamp(3rem,12vw,10rem)] font-extrabold leading-none tracking-tight text-ink">
         <motion.span
